@@ -1,0 +1,701 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Home - Alcazar</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="{% static "images/small_logo.png" %}" />
+
+	<!-- Library - Google Font Familys -->
+
+	<!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="{% static "libraries/lib.css" %}">
+
+	<!-- Custom - Common CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static "css/plugins.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "css/navigation-menu.css" %}">
+
+	<!-- Custom - Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "css/shortcodes.css" %}">
+
+	<!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<!-- Loader -->
+	<div id="site-loader" class="load-complete">
+		<div class="loader">
+			<div class="loader-inner ball-clip-rotate">
+				<div></div>
+			</div>
+		</div>
+	</div><!-- Loader /- -->
+
+	<a id="top"></a>
+
+	<!-- Header Section -->
+	<header id="header" class="header-section container-fluid no-padding">
+		<!-- SidePanel -->
+		<div id="slidepanel">
+			<!-- Top Header -->
+			<div class="top-header container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 col-sm-12">
+							<p>Welcome to best renovation company in themeforest</p>
+						</div>
+						<div class="col-md-5 col-sm-12">
+							<a href="mailto:info@ourdomain.com" title="Info@ourdomain.com"><i class="fa fa-envelope"></i> Info@ourdomain.com</a>
+							<a href="tel:+011234567896" title="+011234567896"><i class="fa fa-phone"></i> (+01) 123 456 7896</a>
+						</div>
+					</div>
+				</div><!-- Container -->
+			</div><!-- Top Header /- -->
+			<!-- Middel Header /- -->
+			<div class="middle-header container-fluid no-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="#" title="Alcazar"><img src="{% static "images/metalar_logo.png" %}" alt="Logo" /></a>
+						</div>
+						<div class="col-md-8 col-sm-12 header-content">
+							<div class="header-cnt-box">
+								<i class="icon icon-Time"></i>
+								<h4>opening hours</h4>
+								<p>MON - FRI : 9:00am to 8:00pm</p>
+							</div>
+							<div class="header-cnt-box">
+								<i class="icon icon-Pointer"></i>
+								<h4>opening hours</h4>
+								<p>MON - FRI : 9:00am to 8:00pm</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- SidePanel /- -->
+		<!-- Container -->
+		<div class="container">
+			<!-- nav -->
+			<nav class="navbar navbar-default ow-navigation">
+				<div id="loginpanel" class="desktop-hide">
+					<div class="right" id="toggle">
+						<a id="slideit" href="#slidepanel"><i class="fo-icons fa fa-inbox"></i></a>
+						<a id="closeit" href="#slidepanel"><i class="fo-icons fa fa-close"></i></a>
+					</div>
+				</div>
+				<div class="navbar-header">
+					<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" title="Alcazar" class="navbar-brand">Alcazar</a>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar">
+					<ul class="nav navbar-nav">
+						<li class="dropdown active">
+							<a href="#top" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+							<i class="ddl-switch fa fa-angle-down"></i>
+							<ul class="dropdown-menu">
+								<li><a href="index.html" title="Home">home</a></li>
+								<li><a href="index2.html" title="Home 2">hOME 2</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html" title="About US">About US</a></li>
+						<li><a href="services.html" title="Services">Services</a></li>
+						<li class="dropdown">
+							<a href="#portfolio-section" title="Projects" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+							<i class="ddl-switch fa fa-angle-down"></i>
+							<ul class="dropdown-menu">
+								<li><a href="portfolio-3-column.html" title="Portfolio 3 Coulmn">Portfolio 3 Coulmn</a></li>
+								<li><a href="portfolio-4-column.html" title="Portfolio 5 Coulmn">Portfolio 4 Coulmn</a></li>
+								<li><a href="project-detail.html" title="Project Detail">Project Detail</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#blog-section" title="Latest News" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Latest News</a>
+							<i class="ddl-switch fa fa-angle-down"></i>
+							<ul class="dropdown-menu">
+								<li><a href="blog.html" title="Blog">Blog</a></li>
+								<li><a href="blog-single.html" title="Single Post">Single Post</a></li>
+							</ul>
+						</li>
+						<li><a href="contact-us.html" title="Contact US">Contact US</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</nav><!-- nav /- -->
+		</div><!-- Container /- -->
+	</header><!-- Header Section /- -->
+
+	<main class="site-main page-spacing">
+		<!-- Slider Section -->
+		<div id="slider-section" class="slider-section container-fluid no-padding">
+			<div id="photo_slider" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#photo_slider" data-slide-to="0" class="active"></li>
+					<li data-target="#photo_slider" data-slide-to="1"></li>
+					<li data-target="#photo_slider" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="{% static "images/home-1-slide1.jpg" %}" width="1920" height="800" alt="Slide">
+						<div class="carousel-caption">
+							<div class="container">
+								<div class="col-md-8 col-sm-8 col-xs-8">
+									<p>Welcome to Alcazar Renovation</p>
+									<h3>Every day is a journey and the journey itself is home</h3>
+									<h6>Now were up in the big leagues getting' our turn at bat. We gonna do it. On your mark get set and go now got a dream and we just.</h6>
+									<a href="#" title="Get In Touch">get in touch</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="{% static "images/home-1-slide1.jpg" %}" width="1920" height="800" alt="Slide">
+						<div class="carousel-caption">
+							<div class="container">
+								<div class="col-md-8 col-sm-8 col-xs-8">
+									<p>Welcome to Alcazar Renovation</p>
+									<h3>Every day is a journey and the journey itself is home</h3>
+									<h6>Now were up in the big leagues getting' our turn at bat. We gonna do it. On your mark get set and go now got a dream and we just.</h6>
+									<a href="#" title="Get In Touch">get in touch</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="{% static "images/home-1-slide1.jpg" %}" width="1920" height="800" alt="Slide">
+						<div class="carousel-caption">
+							<div class="container">
+								<div class="col-md-8 col-sm-8 col-xs-8">
+									<p>Welcome to Alcazar Renovation</p>
+									<h3>Every day is a journey and the journey itself is home</h3>
+									<h6>Now were up in the big leagues getting' our turn at bat. We gonna do it. On your mark get set and go now got a dream and we just.</h6>
+									<a href="#" title="Get In Touch">get in touch</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- Wrapper for slides /- -->
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#photo_slider" role="button" data-slide="prev">
+					<span class="fa fa-angle-left" aria-hidden="true"></span>
+				</a>
+				<a class="right carousel-control" href="#photo_slider" role="button" data-slide="next">
+					<span class="fa fa-angle-right" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div><!-- Slider Section /- -->
+		<div class="section-padding"></div>
+
+		<!-- Welcome Section -->
+		<div class="welcome-section container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<!-- Section Header -->
+				<div class="section-header">
+					<h3>Welcome to renovation</h3>
+					<p>Today still wanted by the government they surv soldiers</p>
+				</div><!-- Section Header /- -->
+				<div class="col-md-6 col-sm-6 welcome-img no-padding">
+					<img src="{% static "images/home-1-welcome.jpg" %}"  width="570" height="497" alt="Welcome" />
+				</div>
+				<div class="col-md-6 col-sm-6 welcome-content">
+					<p>You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. Today still wanted by the govern ment they survive as soldiers of fortune. They were four men living all together yet they were all alone believe walking on air.</p>
+					<div class="welcome-box">
+						<i class="icon icon-Users"></i>
+						<h4>Professional team</h4>
+						<p>The Love Boat promises something for everyone. So get a witch's shawl on a broomstick you can crawl on. </p>
+					</div>
+					<div class="welcome-box">
+						<i class="icon icon-Timer"></i>
+						<h4>24/7 Support</h4>
+						<p>The Love Boat promises something for everyone. So get a witch's shawl on a broomstick you can crawl on. </p>
+					</div>
+					<div class="welcome-box">
+						<i class="icon icon-Plaine"></i>
+						<h4>affordable price</h4>
+						<p>The Love Boat promises something for everyone. So get a witch's shawl on a broomstick you can crawl on. </p>
+					</div>
+				</div>
+			</div><!-- Container /- -->
+		</div><!-- Welcome Section /- -->
+		<div class="section-padding"></div>
+
+		<!-- Services Section -->
+		<div class="services-section container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<!-- Section Header -->
+				<div class="section-header">
+					<h3>Our Services</h3>
+					<p>Today still wanted government</p>
+				</div><!-- Section Header /- -->
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="srv-box">
+							<img src="{% static "images/home-1-service.jpg" %}" width="370" height="370" alt="Services" />
+							<i><img src="{% static "images/home-1-srv-ic1.png" %}" width="36" height="34" alt="Icon" /></i>
+							<div class="srv-box-hover">
+								<h3>renovation</h3>
+								<p>Feels so right it cant be wrong. Rockin' and rollin' all week long. Well the first thing you know ol' Jeds a millionaire.</p>
+								<a href="#" title="Learn More">learn more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="srv-box">
+							<img src="{% static "images/home-1-service.jpg" %}" width="370" height="370" alt="Services" />
+							<i><img src="{% static "images/home-1-srv-ic2.png" %}" width="35" height="34" alt="Icon" /></i>
+							<div class="srv-box-hover">
+								<h3>painting</h3>
+								<p>Feels so right it cant be wrong. Rockin' and rollin' all week long. Well the first thing you know ol' Jeds a millionaire.</p>
+								<a href="#" title="Learn More">learn more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="srv-box">
+							<img src="{% static "images/home-1-service.jpg" %}" width="370" height="370" alt="Services" />
+							<i><img src="{% static "images/home-1-srv-ic3.png" %}" width="24" height="33" alt="Icon" /></i>
+							<div class="srv-box-hover">
+								<h3>electrical</h3>
+								<p>Feels so right it cant be wrong. Rockin' and rollin' all week long. Well the first thing you know ol' Jeds a millionaire.</p>
+								<a href="#" title="Learn More">learn more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- Container /- -->
+		</div><!-- Services Section /- -->
+		<div class="section-padding"></div>
+
+		<!-- Portfolio Section -->
+		<div id="portfolio-section" class="container-fluid no-padding portfolio-section portfolio-4-column">
+			<div class="container">
+				<!-- Section Header -->
+				<div class="section-header">
+					<h3>Our Latest Projects</h3>
+					<p>Today still wanted by the government they surv</p>
+				</div><!-- Section Header -->
+				<!-- Portfolio Filters -->
+				<ul id="filters" class="portfolio-categories no-left-padding sorting-menu">
+					<li class=""><a data-filter="*" class="active" href="#">all projects</a></li>
+					<li class=""><a data-filter=".interior" href="#">Interior</a></li>
+					<li class=""><a data-filter=".plumbing" href="#">plumbing</a></li>
+					<li class=""><a data-filter=".architecture" href="#">architecture</a></li>
+					<li class=""><a data-filter=".lighting" href="#">lighting</a></li>
+					<li class=""><a data-filter=".gardening" href="#">gardening </a></li>
+				</ul><!-- / Portfolio Filters -->
+			</div>
+			<div class="container-fluid no-padding portfolio-list">
+				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box interior">
+					<img width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio1.jpg" %}" />
+					<div class="hover-detail">
+						<div class="links">
+							<a href="{% static "images/home-1-portfolio1.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
+							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
+						</div>
+						<div class="project-title">
+							<h3>Beauty Of the villas</h3>
+							<div class="categories-link">
+								<a href="#" title="Painting">Painting</a>
+								<a href="#" title="Renovation">Renovation</a>
+							</div>
+						</div>
+					</div>/8
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box plumbing gardening">
+					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio2.jpg" %}" />
+					<div class="hover-detail">
+						<div class="links">
+							<a href="{% static "images/home-1-portfolio2.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
+							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
+						</div>
+						<div class="project-title">
+							<h3>Beauty Of the villas</h3>
+							<div class="categories-link">
+								<a href="#" title="Painting">Painting</a>
+								<a href="#" title="Renovation">Renovation</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box architecture">
+					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio3.jpg" %}" />
+					<div class="hover-detail">
+						<div class="links">
+							<a href="{% static "images/home-1-portfolio3.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
+							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
+						</div>
+						<div class="project-title">
+							<h3>Beauty Of the villas</h3>
+							<div class="categories-link">
+								<a href="#" title="Painting">Painting</a>
+								<a href="#" title="Renovation">Renovation</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box architecture gardening">
+					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio4.jpg" %}" />
+					<div class="hover-detail">
+						<div class="links">
+							<a href="{% static "images/home-1-portfolio4.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
+							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
+						</div>
+						<div class="project-title">
+							<h3>Beauty Of the villas</h3>
+							<div class="categories-link">
+								<a href="#" title="Painting">Painting</a>
+								<a href="#" title="Renovation">Renovation</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box plumbing lighting">
+					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio5.jpg" %}" />
+					<div class="hover-detail">
+						<div class="links">
+							<a href="{% static "images/home-1-portfolio5.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
+							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
+						</div>
+						<div class="project-title">
+							<h3>Beauty Of the villas</h3>
+							<div class="categories-link">
+								<a href="#" title="Painting">Painting</a>
+								<a href="#" title="Renovation">Renovation</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box interior">
+					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio6.jpg" %}" />
+					<div class="hover-detail">
+						<div class="links">
+							<a href="{% static "images/home-1-portfolio6.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
+							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
+						</div>
+						<div class="project-title">
+							<h3>Beauty Of the villas</h3>
+							<div class="categories-link">
+								<a href="#" title="Painting">Painting</a>
+								<a href="#" title="Renovation">Renovation</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box gardening architecture">
+					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio7.jpg" %}" />
+					<div class="hover-detail">
+						<div class="links">
+							<a href="{% static "images/home-1-portfolio7.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
+							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
+						</div>
+						<div class="project-title">
+							<h3>Beauty Of the villas</h3>
+							<div class="categories-link">
+								<a href="#" title="Painting">Painting</a>
+								<a href="#" title="Renovation">Renovation</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box interior lighting">
+					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio8.jpg" %}" />
+					<div class="hover-detail">
+						<div class="links">
+							<a href="{% static "images/home-1-portfolio8.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
+							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
+						</div>
+						<div class="project-title">
+							<h3>Beauty Of the villas</h3>
+							<div class="categories-link">
+								<a href="#" title="Painting">Painting</a>
+								<a href="#" title="Renovation">Renovation</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- Portfolio Section /- -->
+
+		<!-- Call Out Section -->
+		<div class="call-out-section container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<h3>Do you want to explore all our works?</h3>
+				<a href="#" title="view all works">view all works</a>
+			</div>
+			<!-- Container /- -->
+		</div><!-- Call Out Section /- -->
+
+		<!-- Why Chosse Section -->
+		<div class="why-choose-section container-fluid no-padding">
+			<div class="section-padding"></div>
+			<!-- Container -->
+			<div class="container">
+				<div class="col-md-6 col-sm-12 col-xs-12 no-padding">
+					<!-- Section Header -->
+					<div class="section-header">
+						<h3>Why Choose Us</h3>
+						<p>Here's the story of a lovely lady who was bringing up three very lovely girls. That this group would somehow form a family that's the way we all brady bunch. </p>
+					</div><!-- Section Header /- -->
+					<div class="why-choose-box">
+						<img src="{% static "images/home-1-why-choose-box1.jpg" %}" width="111" height="111" alt="Why Choose" />
+						<h6>Well Experienced team</h6>
+						<span>Our awesome features</span>
+						<p>To a deluxe apartment in the sky. Were gonna do it. Give us any chance well take it any rule we'll break it. </p>
+					</div>
+					<div class="why-choose-box">
+						<img src="{% static "images/home-1-why-choose-box2.jpg" %}" width="111" height="111" alt="Why Choose" />
+						<h6>advanced technology</h6>
+						<span>Our awesome features</span>
+						<p>To a deluxe apartment in the sky. Were gonna do it. Give us any chance well take it any rule we'll break it. </p>
+					</div>
+					<div class="why-choose-box">
+						<img src="{% static "images/home-1-why-choose-box3.jpg" %}" width="111" height="111" alt="Why Choose" />
+						<h6>award winning</h6>
+						<span>Our awesome features</span>
+						<p>To a deluxe apartment in the sky. Were gonna do it. Give us any chance well take it any rule we'll break it. </p>
+					</div>
+				</div>
+			</div><!-- Container -->
+			<div class="section-padding"></div>
+			<div class="why-choose-bg-img">
+				<img src="{% static "images/home-1-why-choose-bg.png" %}" width="669" height="940" alt="Why Choose" />
+			</div>
+		</div><!-- Why choose Section /- -->
+
+		<!-- Testimonial Section -->
+		<div class="testimonial-section container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<div class="testimonial-carousel">
+					<div class="testimonial-box">
+						<p>Till the one day when the lady met this fellow and they knew it was much more than a hunch. We're gonna do it on your mark.</p>
+						<div class="author-box">
+							<img src="{% static "images/home-1-testi1.jpg" %}" width="67" height="67" alt="Testimonial" />
+							<h4>Ben Afflick <span>Satisfied Customer</span></h4>
+						</div>
+					</div>
+					<div class="testimonial-box">
+						<p>Gee our old Lasalle ran great. Those were the days. That this group would somehow form a family that's the all became.</p>
+						<div class="author-box">
+							<img src="{% static "images/home-1-testi2.jpg" %}" width="67" height="67" alt="Testimonial" />
+							<h4>hendry cavill <span>Satisfied Customer</span></h4>
+						</div>
+					</div>
+					<div class="testimonial-box">
+						<p>Till the one day when the lady met this fellow and they knew it was much more than a hunch. We're gonna do it on your mark.</p>
+						<div class="author-box">
+							<img src="{% static "images/home-1-testi1.jpg" %}" width="67" height="67" alt="Testimonial" />
+							<h4>hendry cavill <span>Satisfied Customer</span></h4>
+						</div>
+					</div>
+				</div>
+			</div><!-- Container /- -->
+		</div><!-- Testimonial Section /- -->
+
+		<!-- Latest News Section -->
+		<div class="latest-news-section container-fluid no-padding">
+			<div class="section-padding"></div>
+			<!-- container -->
+			<div class="container">
+				<!-- Section Header -->
+				<div class="section-header">
+					<h3>Latest News</h3>
+					<p>Today still wanted by government</p>
+				</div><!-- Section Header /- -->
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<article class="type-post">
+							<div class="entry-cover">
+								<a href="blog-single.php"><img src="{% static "images/home-1-latest-news1.jpg" %}" width="350" height="436" alt="News" /></a>
+							</div>
+							<div class="entry-content">
+								<h3 class="entry-title"><a href="blog-single.php" title="Travelled down the road and back again">Travelled down the road and back again</a></h3>
+								<div class="post-date">
+									<span>21</span>May, 16
+								</div>
+								<div class="entry-meta">
+									<div class="byline">By <a href="#" title="Admin">Admin</a></div>
+									<div class="post-comment"><a href="#" title="Comments"> 03 Comments</a></div>
+								</div>
+								<p>Their house is a museum where people come to see ‘em. They really are a scream the addams family so this is the tale.</p>
+								<a href="blog-single.php" title="Read More">read more <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<article class="type-post">
+							<div class="entry-cover">
+								<a href="blog-single.php"><img src="images/home-1-latest-news2.jpg" width="350" height="436" alt="News" /></a>
+							</div>
+							<div class="entry-content">
+								<h3 class="entry-title"><a href="blog-single.php" title="Beats all you've ever saw been trouble">Beats all you've ever saw been trouble</a></h3>
+								<div class="post-date">
+									<span>20</span>May, 16
+								</div>
+								<div class="entry-meta">
+									<div class="byline">By <a href="#" title="Admin">Admin</a></div>
+									<div class="post-comment"><a href="#" title="Comments"> 11 Comments</a></div>
+								</div>
+								<p>That this group would somehow form a family that's the way we all became the Brady Bunch. The weather started getting.</p>
+								<a href="blog-single.php" title="Read More">read more <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div><!-- container /- -->
+			<div class="section-padding"></div>
+		</div><!-- Latest News Section /- -->
+
+	</main>
+
+	<!-- Footer Section -->
+	<div class="footer-section container-fluid no-padding">
+		<!-- Container -->
+		<div class="container">
+			<div class="footer-callout">
+				<h4><img src="{% static "images/footer-callout-ic.png" %}" width="44" height="40" alt="Call Out Ic" /> Want to hire us for your work? <span>Just <b>Contact Us</b> and you’re done</span></h4>
+				<a href="#" title="contact us">contact us</a>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<aside class="ftr-widget widget_contact">
+						<h3 class="widget-title">Contact us</h3>
+						<div class="info-box">
+							<h5>Address</h5>
+							<p>17 Downtown St, Victoria, Australia.</p>
+						</div>
+						<div class="info-box">
+							<h5>Email Us</h5>
+							<a href="mailto:info@ourdomain.com" title="Info@Ourdomain.Com">Info@Ourdomain.Com</a>
+							<a href="mailto:support@ourdomain.com" title="Support@Ourdomain.Com">Support@Ourdomain.Com</a>
+						</div>
+						<div class="info-box">
+							<h5>Call Us</h5>
+							<a href="tel:+101234567896" title="+(10) 123 456 7896">+(10) 123 456 7896</a>
+							<a href="tel:+101234567899" title="+(10) 123 456 7899">+(10) 123 456 7899</a>
+						</div>
+					</aside>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<aside class="ftr-widget widget_opening">
+						<h3 class="widget-title">opening Hours</h3>
+						<p><span>Monday - Friday </span>: 9:00am to 7:00pm</p>
+						<p><span>Sunday - Saturday </span>: 9:00am to 7:00pm</p>
+					</aside>
+					<aside class="ftr-widget widget_links">
+						<h3 class="widget-title">useful links</h3>
+						<ul>
+							<li><a href="about.html" title="About us">About us</a></li>
+							<li><a href="services.html" title="Services">Services</a></li>
+							<li><a href="portfolio-3-column.html" title="Projects">Projects</a></li>
+							<li><a href="#" title="Our Team">Our Team</a></li>
+							<li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
+						</ul>
+					</aside>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<aside class="ftr-widget widget_subscribe">
+						<h3 class="widget-title">subscribe</h3>
+						<form>
+							<div class="form-group">
+								<i class="icon icon-User"></i>
+								<input type="text" class="form-control" placeholder="Your Name" />
+							</div>
+							<div class="form-group">
+								<i class="icon icon-Mail"></i>
+								<input type="text" class="form-control" placeholder="Email" />
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Subscribe" />
+							</div>
+						</form>
+					</aside>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<aside class="ftr-widget widget_gallery">
+						<h3 class="widget-title">project gallery</h3>
+						<div class="ftr-gallery">
+							<a href="#"><img src="{% static "images/ftr-wid-gallery1.jpg" %}" width="83" height="83" alt="Gallery" /></a>
+							<a href="#"><img src="{% static "images/ftr-wid-gallery2.jpg" %}" width="83" height="83" alt="Gallery" /></a>
+							<a href="#"><img src="{% static "images/ftr-wid-gallery2.jpg" %}" width="83" height="83" alt="Gallery" /></a>
+							<a href="#"><img src="{% static "images/ftr-wid-gallery4.jpg" %}" width="83" height="83" alt="Gallery" /></a>
+							<a href="#"><img src="{% static "images/ftr-wid-gallery5.jpg" %}" width="83" height="83" alt="Gallery" /></a>
+							<a href="#"><img src="{% static "images/ftr-wid-gallery6.jpg" %}" width="83" height="83" alt="Gallery" /></a>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div><!-- Container /- -->
+		<div class="footer-bottom container-fluid no-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-12 col-xs-12">
+						<p>&copy; 2016 All Rights Reserved</p>
+					</div>
+					<div class="col-md-10 col-sm-12 col-xs-12">
+						<!-- nav -->
+						<nav class="navbar navbar-default ow-navigation">
+							<div class="navbar-header">
+								<button aria-controls="navbar" aria-expanded="false" data-target="#ftr-navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="navbar-collapse collapse navbar-right" id="ftr-navbar">
+								<ul class="nav navbar-nav">
+									<li><a href="index.html" title="Home">Home</a></li>
+									<li><a href="services.html" title="Services">Services</a></li>
+									<li><a href="#" title="Terms & Condition">Terms &amp; Condition</a></li>
+									<li><a href="#" title="Privacy Policy">privacy policy</a></li>
+									<li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
+								</ul>
+							</div><!--/.nav-collapse -->
+						</nav><!-- nav /- -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- Footer Section /- -->
+
+	<!-- JQuery v1.11.3 -->
+	<script src="{% static "js/jquery.min.js" %}"></script>
+
+	<!-- Library JS -->
+	<script src="{% static "libraries/lib.js" %}"></script>
+
+	<!-- Library - Theme JS -->
+	<script src="{% static "js/functions.js" %}"></script>
+
+</body>
+</html>
