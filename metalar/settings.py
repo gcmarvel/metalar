@@ -25,7 +25,9 @@ SECRET_KEY = '_nvn(@l&4r_&yct)+(@(^fua_t(idq8^=zo$kn(#ipx@2253)-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'metalar.pythonanywhere.com']
 
 SITE_ID = 1
 
