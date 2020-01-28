@@ -1392,3 +1392,7 @@ main {
 .gray {
 	color: #9d9c9c;
 }
+
+.section-padding-small {
+	padding: 40px 0;
+}
