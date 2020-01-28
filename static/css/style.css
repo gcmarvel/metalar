@@ -768,8 +768,8 @@ main {
 
 /* - Middle Header */
 .middle-header {
-	padding-bottom: 40px;
-	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 .middle-header .header-content { 
 	text-align: right;
@@ -1386,4 +1386,9 @@ main {
     height:100%;
     width:100%;
     position:absolute;
+}
+
+
+.gray {
+	color: #9d9c9c;
 }

@@ -955,7 +955,7 @@
 	position: relative;
 }
 .testimonial-section::before {
-	background-color: rgba(139, 26, 20, 0.92);
+	background-color: rgba(139, 26, 20, 0.80);
 	content: "";
 	position: absolute;
 	left: 0;
