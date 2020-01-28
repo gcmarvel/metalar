@@ -1085,7 +1085,8 @@ main {
 	background-position: center top;
 	background-repeat: no-repeat;
 	color: #222222;
-	font-family: "RalewayHeavy";
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 900;
 	font-size: 36px;
 	margin-top: 0;
 	padding-top: 25px;
@@ -1366,4 +1367,23 @@ main {
 	.footer-section .row > .col-xs-6 {
 		width: 100%;
 	}
+}
+
+
+.address {
+	color: white;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }

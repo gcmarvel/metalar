@@ -1,4 +1,5 @@
 {% load static %}
+{% load thumbnail %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
@@ -12,16 +13,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Производство металлоконструкций в Калининграде. Изготовление и монтаж металлоконструкций и изделий из дерева и металла под заказ и любой сложности.">
 
-	<title>Home - Alcazar</title>
+	<title>МЕТАЛЛАР || Металлоконструкции в Калининграде. Изделия из металла и дерева. </title>
 
 	<!-- Standard Favicon -->
 	<link rel="icon" type="image/x-icon" href="{% static "images/small_logo.png" %}" />
 
 	<!-- Library - Google Font Familys -->
-
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Montserrat&display=swap" rel="stylesheet">
 	<!-- Library - Bootstrap v3.3.5 -->
     <link rel="stylesheet" type="text/css" href="{% static "libraries/lib.css" %}">
 
@@ -39,7 +39,7 @@
 
 </head>
 
-<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+<body>
 	<!-- Loader -->
 	<div id="site-loader" class="load-complete">
 		<div class="loader">
@@ -61,11 +61,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-7 col-sm-12">
-							<p>Welcome to best renovation company in themeforest</p>
+							<p>Металлоконструкции в Калининграде. Изделия из металла и дерева.</p>
 						</div>
 						<div class="col-md-5 col-sm-12">
-							<a href="mailto:info@ourdomain.com" title="Info@ourdomain.com"><i class="fa fa-envelope"></i> Info@ourdomain.com</a>
-							<a href="tel:+011234567896" title="+011234567896"><i class="fa fa-phone"></i> (+01) 123 456 7896</a>
+							<a href="mailto:metalar@rambler.ru" title="metalar@rambler.ru"><i class="fa fa-envelope"></i>metalar@rambler.ru</a>
+							<a href="tel:+79114681355" title="+79114681355"><i class="fa fa-phone"></i>+79114681355</a>
 						</div>
 					</div>
 				</div><!-- Container -->
@@ -75,18 +75,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
-							<a href="#" title="Alcazar"><img src="{% static "images/metalar_logo.png" %}" alt="Logo" /></a>
+							<a href="{% url 'home' %}" title="Металлоконструкции в Калининграде. Изделия из металла и дерева."><img src="{% static "images/metalar_logo.png" %}" alt="Логотип Металлар" /></a>
 						</div>
 						<div class="col-md-8 col-sm-12 header-content">
 							<div class="header-cnt-box">
 								<i class="icon icon-Time"></i>
-								<h4>opening hours</h4>
-								<p>MON - FRI : 9:00am to 8:00pm</p>
-							</div>
-							<div class="header-cnt-box">
-								<i class="icon icon-Pointer"></i>
-								<h4>opening hours</h4>
-								<p>MON - FRI : 9:00am to 8:00pm</p>
+								<h4>Часы работы</h4>
+								<p>ПН - ПТ : 9:00 - 20:00</p>
 							</div>
 						</div>
 					</div>
@@ -94,58 +89,6 @@
 			</div>
 		</div><!-- SidePanel /- -->
 		<!-- Container -->
-		<div class="container">
-			<!-- nav -->
-			<nav class="navbar navbar-default ow-navigation">
-				<div id="loginpanel" class="desktop-hide">
-					<div class="right" id="toggle">
-						<a id="slideit" href="#slidepanel"><i class="fo-icons fa fa-inbox"></i></a>
-						<a id="closeit" href="#slidepanel"><i class="fo-icons fa fa-close"></i></a>
-					</div>
-				</div>
-				<div class="navbar-header">
-					<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="index.html" title="Alcazar" class="navbar-brand">Alcazar</a>
-				</div>
-				<div class="navbar-collapse collapse" id="navbar">
-					<ul class="nav navbar-nav">
-						<li class="dropdown active">
-							<a href="#top" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-							<i class="ddl-switch fa fa-angle-down"></i>
-							<ul class="dropdown-menu">
-								<li><a href="index.html" title="Home">home</a></li>
-								<li><a href="index2.html" title="Home 2">hOME 2</a></li>
-							</ul>
-						</li>
-						<li><a href="about.html" title="About US">About US</a></li>
-						<li><a href="services.html" title="Services">Services</a></li>
-						<li class="dropdown">
-							<a href="#portfolio-section" title="Projects" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
-							<i class="ddl-switch fa fa-angle-down"></i>
-							<ul class="dropdown-menu">
-								<li><a href="portfolio-3-column.html" title="Portfolio 3 Coulmn">Portfolio 3 Coulmn</a></li>
-								<li><a href="portfolio-4-column.html" title="Portfolio 5 Coulmn">Portfolio 4 Coulmn</a></li>
-								<li><a href="project-detail.html" title="Project Detail">Project Detail</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#blog-section" title="Latest News" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Latest News</a>
-							<i class="ddl-switch fa fa-angle-down"></i>
-							<ul class="dropdown-menu">
-								<li><a href="blog.html" title="Blog">Blog</a></li>
-								<li><a href="blog-single.html" title="Single Post">Single Post</a></li>
-							</ul>
-						</li>
-						<li><a href="contact-us.html" title="Contact US">Contact US</a></li>
-					</ul>
-				</div><!--/.nav-collapse -->
-			</nav><!-- nav /- -->
-		</div><!-- Container /- -->
 	</header><!-- Header Section /- -->
 
 	<main class="site-main page-spacing">
@@ -165,36 +108,36 @@
 						<div class="carousel-caption">
 							<div class="container">
 								<div class="col-md-8 col-sm-8 col-xs-8">
-									<p>Welcome to Alcazar Renovation</p>
-									<h3>Every day is a journey and the journey itself is home</h3>
-									<h6>Now were up in the big leagues getting' our turn at bat. We gonna do it. On your mark get set and go now got a dream and we just.</h6>
-									<a href="#" title="Get In Touch">get in touch</a>
+									<p>Компания "Металар" предлагает</p>
+									<h3>Производство и монтаж металлоконструкций</h3>
+									<h6>При изготовлении металлоконструкций используется только самое современное оборудование и новейшие технологии</h6>
+									<a href="#" title="Оставить заказ">Оставить заказ</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
-						<img src="{% static "images/home-1-slide1.jpg" %}" width="1920" height="800" alt="Slide">
+						<img src="{% static "images/home-1-slide2.jpg" %}" width="1920" height="800" alt="Slide">
 						<div class="carousel-caption">
 							<div class="container">
 								<div class="col-md-8 col-sm-8 col-xs-8">
-									<p>Welcome to Alcazar Renovation</p>
-									<h3>Every day is a journey and the journey itself is home</h3>
-									<h6>Now were up in the big leagues getting' our turn at bat. We gonna do it. On your mark get set and go now got a dream and we just.</h6>
-									<a href="#" title="Get In Touch">get in touch</a>
+									<p>Компания "Металар" предлагает</p>
+									<h3>Изделия из металла и дерева любой сложности</h3>
+									<h6>Качественные изделия, изготовленные в строгом соответствии с технологией. Мы предоставляем широкий ассортимент продукции</h6>
+									<a href="#" title="Оставить заказ">Оставить заказ</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
-						<img src="{% static "images/home-1-slide1.jpg" %}" width="1920" height="800" alt="Slide">
+						<img src="{% static "images/home-1-slide3.jpg" %}" width="1920" height="800" alt="Slide">
 						<div class="carousel-caption">
 							<div class="container">
 								<div class="col-md-8 col-sm-8 col-xs-8">
-									<p>Welcome to Alcazar Renovation</p>
-									<h3>Every day is a journey and the journey itself is home</h3>
-									<h6>Now were up in the big leagues getting' our turn at bat. We gonna do it. On your mark get set and go now got a dream and we just.</h6>
-									<a href="#" title="Get In Touch">get in touch</a>
+									<p>Компания "Металар" предлагает</p>
+									<h3>Проектирование и производство на заказ</h3>
+									<h6>Проектирование и расчет любых работ. Производство в полном соостветствии с проектными документами</h6>
+									<a href="#" title="Оставить заказ">Оставить заказ</a>
 								</div>
 							</div>
 						</div>
@@ -218,80 +161,32 @@
 			<div class="container">
 				<!-- Section Header -->
 				<div class="section-header">
-					<h3>Welcome to renovation</h3>
-					<p>Today still wanted by the government they surv soldiers</p>
+					<h3>О нашей компании</h3>
+					<p>Почему стоит обратиться именно к нам</p>
 				</div><!-- Section Header /- -->
 				<div class="col-md-6 col-sm-6 welcome-img no-padding">
 					<img src="{% static "images/home-1-welcome.jpg" %}"  width="570" height="497" alt="Welcome" />
 				</div>
 				<div class="col-md-6 col-sm-6 welcome-content">
-					<p>You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. Today still wanted by the govern ment they survive as soldiers of fortune. They were four men living all together yet they were all alone believe walking on air.</p>
+					<p>Наша компания предоставляет услуги по производству и монтажу металлоконструкций уже более 15 лет и имеет безупречную репутацию среди коммерческих и частных клиентов</p>
 					<div class="welcome-box">
 						<i class="icon icon-Users"></i>
-						<h4>Professional team</h4>
-						<p>The Love Boat promises something for everyone. So get a witch's shawl on a broomstick you can crawl on. </p>
+						<h4>Профессиональная команда</h4>
+						<p>Мы - команда профессионалов-единомышленников увлеченных и любящих свое дело. Качество - наш приоритет</p>
 					</div>
 					<div class="welcome-box">
-						<i class="icon icon-Timer"></i>
-						<h4>24/7 Support</h4>
-						<p>The Love Boat promises something for everyone. So get a witch's shawl on a broomstick you can crawl on. </p>
+						<i class="icon icon-File"></i>
+						<h4>Гарантия работы</h4>
+						<p>Мы гарантируем наивысшего качество произведенных нами работ и изделий из дерева и металла</p>
 					</div>
 					<div class="welcome-box">
-						<i class="icon icon-Plaine"></i>
-						<h4>affordable price</h4>
-						<p>The Love Boat promises something for everyone. So get a witch's shawl on a broomstick you can crawl on. </p>
+						<i class="icon icon-Dollar"></i>
+						<h4>Доступные цены</h4>
+						<p>Мы предлагаем широкий спектр работ и материалов, подходящих под любой бюджет</p>
 					</div>
 				</div>
 			</div><!-- Container /- -->
 		</div><!-- Welcome Section /- -->
-		<div class="section-padding"></div>
-
-		<!-- Services Section -->
-		<div class="services-section container-fluid no-padding">
-			<!-- Container -->
-			<div class="container">
-				<!-- Section Header -->
-				<div class="section-header">
-					<h3>Our Services</h3>
-					<p>Today still wanted government</p>
-				</div><!-- Section Header /- -->
-				<div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-6">
-						<div class="srv-box">
-							<img src="{% static "images/home-1-service.jpg" %}" width="370" height="370" alt="Services" />
-							<i><img src="{% static "images/home-1-srv-ic1.png" %}" width="36" height="34" alt="Icon" /></i>
-							<div class="srv-box-hover">
-								<h3>renovation</h3>
-								<p>Feels so right it cant be wrong. Rockin' and rollin' all week long. Well the first thing you know ol' Jeds a millionaire.</p>
-								<a href="#" title="Learn More">learn more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-6">
-						<div class="srv-box">
-							<img src="{% static "images/home-1-service.jpg" %}" width="370" height="370" alt="Services" />
-							<i><img src="{% static "images/home-1-srv-ic2.png" %}" width="35" height="34" alt="Icon" /></i>
-							<div class="srv-box-hover">
-								<h3>painting</h3>
-								<p>Feels so right it cant be wrong. Rockin' and rollin' all week long. Well the first thing you know ol' Jeds a millionaire.</p>
-								<a href="#" title="Learn More">learn more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-6">
-						<div class="srv-box">
-							<img src="{% static "images/home-1-service.jpg" %}" width="370" height="370" alt="Services" />
-							<i><img src="{% static "images/home-1-srv-ic3.png" %}" width="24" height="33" alt="Icon" /></i>
-							<div class="srv-box-hover">
-								<h3>electrical</h3>
-								<p>Feels so right it cant be wrong. Rockin' and rollin' all week long. Well the first thing you know ol' Jeds a millionaire.</p>
-								<a href="#" title="Learn More">learn more</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!-- Container /- -->
-		</div><!-- Services Section /- -->
 		<div class="section-padding"></div>
 
 		<!-- Portfolio Section -->
@@ -299,148 +194,26 @@
 			<div class="container">
 				<!-- Section Header -->
 				<div class="section-header">
-					<h3>Our Latest Projects</h3>
-					<p>Today still wanted by the government they surv</p>
+					<h3>Наша продукция</h3>
+                    <p>Изделия из металла и дерева</p>
 				</div><!-- Section Header -->
-				<!-- Portfolio Filters -->
-				<ul id="filters" class="portfolio-categories no-left-padding sorting-menu">
-					<li class=""><a data-filter="*" class="active" href="#">all projects</a></li>
-					<li class=""><a data-filter=".interior" href="#">Interior</a></li>
-					<li class=""><a data-filter=".plumbing" href="#">plumbing</a></li>
-					<li class=""><a data-filter=".architecture" href="#">architecture</a></li>
-					<li class=""><a data-filter=".lighting" href="#">lighting</a></li>
-					<li class=""><a data-filter=".gardening" href="#">gardening </a></li>
-				</ul><!-- / Portfolio Filters -->
 			</div>
 			<div class="container-fluid no-padding portfolio-list">
+                {% for service in services %}
 				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box interior">
-					<img width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio1.jpg" %}" />
+                        {% thumbnail service.image "480x310" crop="center" as im %}
+                            <img alt="{{ service.title }}" src="{{ im.url }}"/>
+                        {% endthumbnail %}
 					<div class="hover-detail">
 						<div class="links">
-							<a href="{% static "images/home-1-portfolio1.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
-							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
+							<a href="{{ service.image.url }}" class="zoom" title="{{ service.title }}"><i class="fa fa-search"></i></a>
 						</div>
 						<div class="project-title">
-							<h3>Beauty Of the villas</h3>
-							<div class="categories-link">
-								<a href="#" title="Painting">Painting</a>
-								<a href="#" title="Renovation">Renovation</a>
-							</div>
-						</div>
-					</div>/8
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box plumbing gardening">
-					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio2.jpg" %}" />
-					<div class="hover-detail">
-						<div class="links">
-							<a href="{% static "images/home-1-portfolio2.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
-							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
-						</div>
-						<div class="project-title">
-							<h3>Beauty Of the villas</h3>
-							<div class="categories-link">
-								<a href="#" title="Painting">Painting</a>
-								<a href="#" title="Renovation">Renovation</a>
-							</div>
+							<h3>{{ service.title }}</h3>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box architecture">
-					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio3.jpg" %}" />
-					<div class="hover-detail">
-						<div class="links">
-							<a href="{% static "images/home-1-portfolio3.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
-							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
-						</div>
-						<div class="project-title">
-							<h3>Beauty Of the villas</h3>
-							<div class="categories-link">
-								<a href="#" title="Painting">Painting</a>
-								<a href="#" title="Renovation">Renovation</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box architecture gardening">
-					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio4.jpg" %}" />
-					<div class="hover-detail">
-						<div class="links">
-							<a href="{% static "images/home-1-portfolio4.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
-							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
-						</div>
-						<div class="project-title">
-							<h3>Beauty Of the villas</h3>
-							<div class="categories-link">
-								<a href="#" title="Painting">Painting</a>
-								<a href="#" title="Renovation">Renovation</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box plumbing lighting">
-					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio5.jpg" %}" />
-					<div class="hover-detail">
-						<div class="links">
-							<a href="{% static "images/home-1-portfolio5.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
-							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
-						</div>
-						<div class="project-title">
-							<h3>Beauty Of the villas</h3>
-							<div class="categories-link">
-								<a href="#" title="Painting">Painting</a>
-								<a href="#" title="Renovation">Renovation</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box interior">
-					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio6.jpg" %}" />
-					<div class="hover-detail">
-						<div class="links">
-							<a href="{% static "images/home-1-portfolio6.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
-							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
-						</div>
-						<div class="project-title">
-							<h3>Beauty Of the villas</h3>
-							<div class="categories-link">
-								<a href="#" title="Painting">Painting</a>
-								<a href="#" title="Renovation">Renovation</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box gardening architecture">
-					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio7.jpg" %}" />
-					<div class="hover-detail">
-						<div class="links">
-							<a href="{% static "images/home-1-portfolio7.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
-							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
-						</div>
-						<div class="project-title">
-							<h3>Beauty Of the villas</h3>
-							<div class="categories-link">
-								<a href="#" title="Painting">Painting</a>
-								<a href="#" title="Renovation">Renovation</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box interior lighting">
-					<img  width="480" height="310" alt="Portfolio" src="{% static "images/home-1-portfolio8.jpg" %}" />
-					<div class="hover-detail">
-						<div class="links">
-							<a href="{% static "images/home-1-portfolio8.jpg" %}" class="zoom" title="Zoom"><i class="fa fa-search"></i></a>
-							<a href="project-detail.php" title="Link"><i class="fa fa-link"></i></a>
-						</div>
-						<div class="project-title">
-							<h3>Beauty Of the villas</h3>
-							<div class="categories-link">
-								<a href="#" title="Painting">Painting</a>
-								<a href="#" title="Renovation">Renovation</a>
-							</div>
-						</div>
-					</div>
-				</div>
+                {% endfor %}
 			</div>
 		</div><!-- Portfolio Section /- -->
 
@@ -448,48 +221,11 @@
 		<div class="call-out-section container-fluid no-padding">
 			<!-- Container -->
 			<div class="container">
-				<h3>Do you want to explore all our works?</h3>
-				<a href="#" title="view all works">view all works</a>
+				<h3>Нужны металлоконструкции? Оставьте телефон и мы перезвоним вам в ближайшее время</h3>
+				<a href="#" title="view all works">Позвоните мне</a>
 			</div>
 			<!-- Container /- -->
 		</div><!-- Call Out Section /- -->
-
-		<!-- Why Chosse Section -->
-		<div class="why-choose-section container-fluid no-padding">
-			<div class="section-padding"></div>
-			<!-- Container -->
-			<div class="container">
-				<div class="col-md-6 col-sm-12 col-xs-12 no-padding">
-					<!-- Section Header -->
-					<div class="section-header">
-						<h3>Why Choose Us</h3>
-						<p>Here's the story of a lovely lady who was bringing up three very lovely girls. That this group would somehow form a family that's the way we all brady bunch. </p>
-					</div><!-- Section Header /- -->
-					<div class="why-choose-box">
-						<img src="{% static "images/home-1-why-choose-box1.jpg" %}" width="111" height="111" alt="Why Choose" />
-						<h6>Well Experienced team</h6>
-						<span>Our awesome features</span>
-						<p>To a deluxe apartment in the sky. Were gonna do it. Give us any chance well take it any rule we'll break it. </p>
-					</div>
-					<div class="why-choose-box">
-						<img src="{% static "images/home-1-why-choose-box2.jpg" %}" width="111" height="111" alt="Why Choose" />
-						<h6>advanced technology</h6>
-						<span>Our awesome features</span>
-						<p>To a deluxe apartment in the sky. Were gonna do it. Give us any chance well take it any rule we'll break it. </p>
-					</div>
-					<div class="why-choose-box">
-						<img src="{% static "images/home-1-why-choose-box3.jpg" %}" width="111" height="111" alt="Why Choose" />
-						<h6>award winning</h6>
-						<span>Our awesome features</span>
-						<p>To a deluxe apartment in the sky. Were gonna do it. Give us any chance well take it any rule we'll break it. </p>
-					</div>
-				</div>
-			</div><!-- Container -->
-			<div class="section-padding"></div>
-			<div class="why-choose-bg-img">
-				<img src="{% static "images/home-1-why-choose-bg.png" %}" width="669" height="940" alt="Why Choose" />
-			</div>
-		</div><!-- Why choose Section /- -->
 
 		<!-- Testimonial Section -->
 		<div class="testimonial-section container-fluid no-padding">
@@ -497,195 +233,88 @@
 			<div class="container">
 				<div class="testimonial-carousel">
 					<div class="testimonial-box">
-						<p>Till the one day when the lady met this fellow and they knew it was much more than a hunch. We're gonna do it on your mark.</p>
+						<p>Качественная работа выполненная в срок. Компания "Металар" полностью оправдала ожидания</p>
 						<div class="author-box">
-							<img src="{% static "images/home-1-testi1.jpg" %}" width="67" height="67" alt="Testimonial" />
-							<h4>Ben Afflick <span>Satisfied Customer</span></h4>
+							<img src="{% static "images/small_logo_black.png" %}" width="67" height="67" alt="Testimonial" />
+							<h4>Валерий <span>клиент компании "Металар"</span></h4>
 						</div>
 					</div>
 					<div class="testimonial-box">
-						<p>Gee our old Lasalle ran great. Those were the days. That this group would somehow form a family that's the all became.</p>
+						<p>За небольшие деньги я получил кованую лестницу высочайшего качества. Великолепная работа</p>
 						<div class="author-box">
-							<img src="{% static "images/home-1-testi2.jpg" %}" width="67" height="67" alt="Testimonial" />
-							<h4>hendry cavill <span>Satisfied Customer</span></h4>
+							<img src="{% static "images/small_logo_black.png" %}" width="67" height="67" alt="Testimonial" />
+							<h4>Андрей <span>клиент компании "Металар"</span></h4>
 						</div>
 					</div>
 					<div class="testimonial-box">
-						<p>Till the one day when the lady met this fellow and they knew it was much more than a hunch. We're gonna do it on your mark.</p>
+						<p>Спасибо за отлично сделанные гаражные ворота, было очень приятно иметь с вами дело</p>
 						<div class="author-box">
-							<img src="{% static "images/home-1-testi1.jpg" %}" width="67" height="67" alt="Testimonial" />
-							<h4>hendry cavill <span>Satisfied Customer</span></h4>
+							<img src="{% static "images/small_logo_black.png" %}" width="67" height="67" alt="Testimonial" />
+							<h4>Максим <span>клиент компании "Металар"</span></h4>
 						</div>
 					</div>
 				</div>
 			</div><!-- Container /- -->
 		</div><!-- Testimonial Section /- -->
-
-		<!-- Latest News Section -->
-		<div class="latest-news-section container-fluid no-padding">
-			<div class="section-padding"></div>
-			<!-- container -->
-			<div class="container">
-				<!-- Section Header -->
-				<div class="section-header">
-					<h3>Latest News</h3>
-					<p>Today still wanted by government</p>
-				</div><!-- Section Header /- -->
-				<div class="row">
-					<div class="col-md-6 col-sm-6">
-						<article class="type-post">
-							<div class="entry-cover">
-								<a href="blog-single.php"><img src="{% static "images/home-1-latest-news1.jpg" %}" width="350" height="436" alt="News" /></a>
-							</div>
-							<div class="entry-content">
-								<h3 class="entry-title"><a href="blog-single.php" title="Travelled down the road and back again">Travelled down the road and back again</a></h3>
-								<div class="post-date">
-									<span>21</span>May, 16
-								</div>
-								<div class="entry-meta">
-									<div class="byline">By <a href="#" title="Admin">Admin</a></div>
-									<div class="post-comment"><a href="#" title="Comments"> 03 Comments</a></div>
-								</div>
-								<p>Their house is a museum where people come to see ‘em. They really are a scream the addams family so this is the tale.</p>
-								<a href="blog-single.php" title="Read More">read more <i class="fa fa-long-arrow-right"></i></a>
-							</div>
-						</article>
-					</div>
-					<div class="col-md-6 col-sm-6">
-						<article class="type-post">
-							<div class="entry-cover">
-								<a href="blog-single.php"><img src="images/home-1-latest-news2.jpg" width="350" height="436" alt="News" /></a>
-							</div>
-							<div class="entry-content">
-								<h3 class="entry-title"><a href="blog-single.php" title="Beats all you've ever saw been trouble">Beats all you've ever saw been trouble</a></h3>
-								<div class="post-date">
-									<span>20</span>May, 16
-								</div>
-								<div class="entry-meta">
-									<div class="byline">By <a href="#" title="Admin">Admin</a></div>
-									<div class="post-comment"><a href="#" title="Comments"> 11 Comments</a></div>
-								</div>
-								<p>That this group would somehow form a family that's the way we all became the Brady Bunch. The weather started getting.</p>
-								<a href="blog-single.php" title="Read More">read more <i class="fa fa-long-arrow-right"></i></a>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div><!-- container /- -->
-			<div class="section-padding"></div>
-		</div><!-- Latest News Section /- -->
-
 	</main>
 
 	<!-- Footer Section -->
 	<div class="footer-section container-fluid no-padding">
 		<!-- Container -->
 		<div class="container">
-			<div class="footer-callout">
-				<h4><img src="{% static "images/footer-callout-ic.png" %}" width="44" height="40" alt="Call Out Ic" /> Want to hire us for your work? <span>Just <b>Contact Us</b> and you’re done</span></h4>
-				<a href="#" title="contact us">contact us</a>
-			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<aside class="ftr-widget widget_contact">
-						<h3 class="widget-title">Contact us</h3>
+						<h3 class="widget-title">Наши контакты</h3>
 						<div class="info-box">
-							<h5>Address</h5>
-							<p>17 Downtown St, Victoria, Australia.</p>
+							<h5>Email</h5>
+							<a href="mailto:metalar@rambler.ru" title="metalar@rambler.ru">metalar@rambler.ru</a>
 						</div>
 						<div class="info-box">
-							<h5>Email Us</h5>
-							<a href="mailto:info@ourdomain.com" title="Info@Ourdomain.Com">Info@Ourdomain.Com</a>
-							<a href="mailto:support@ourdomain.com" title="Support@Ourdomain.Com">Support@Ourdomain.Com</a>
+							<h5>Телефон</h5>
+							<a href="tel:+79114681355" title="+79114681355">+79114681355</a>
 						</div>
-						<div class="info-box">
-							<h5>Call Us</h5>
-							<a href="tel:+101234567896" title="+(10) 123 456 7896">+(10) 123 456 7896</a>
-							<a href="tel:+101234567899" title="+(10) 123 456 7899">+(10) 123 456 7899</a>
-						</div>
+                        <aside class="ftr-widget widget_subscribe">
+                            <form>
+                                <div class="form-group">
+                                    <input type="submit" value="Оставить заказ" />
+                                </div>
+                            </form>
+                        </aside>
 					</aside>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<aside class="ftr-widget widget_opening">
-						<h3 class="widget-title">opening Hours</h3>
-						<p><span>Monday - Friday </span>: 9:00am to 7:00pm</p>
-						<p><span>Sunday - Saturday </span>: 9:00am to 7:00pm</p>
+						<h3 class="widget-title">Часы работы</h3>
+						<p><span>Понедельник - Пятница</span>: 9:00 - 22:00</p>
 					</aside>
 					<aside class="ftr-widget widget_links">
-						<h3 class="widget-title">useful links</h3>
-						<ul>
-							<li><a href="about.html" title="About us">About us</a></li>
-							<li><a href="services.html" title="Services">Services</a></li>
-							<li><a href="portfolio-3-column.html" title="Projects">Projects</a></li>
-							<li><a href="#" title="Our Team">Our Team</a></li>
-							<li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
-						</ul>
+						<h3 class="widget-title">Адрес</h3>
+							<p class="address">г. Калининград<br> улица Нарвская<br> дом 47, корпус В, офис 17</p>
 					</aside>
 				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<aside class="ftr-widget widget_subscribe">
-						<h3 class="widget-title">subscribe</h3>
-						<form>
-							<div class="form-group">
-								<i class="icon icon-User"></i>
-								<input type="text" class="form-control" placeholder="Your Name" />
-							</div>
-							<div class="form-group">
-								<i class="icon icon-Mail"></i>
-								<input type="text" class="form-control" placeholder="Email" />
-							</div>
-							<div class="form-group">
-								<input type="submit" value="Subscribe" />
-							</div>
-						</form>
-					</aside>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<aside class="ftr-widget widget_gallery">
-						<h3 class="widget-title">project gallery</h3>
-						<div class="ftr-gallery">
-							<a href="#"><img src="{% static "images/ftr-wid-gallery1.jpg" %}" width="83" height="83" alt="Gallery" /></a>
-							<a href="#"><img src="{% static "images/ftr-wid-gallery2.jpg" %}" width="83" height="83" alt="Gallery" /></a>
-							<a href="#"><img src="{% static "images/ftr-wid-gallery2.jpg" %}" width="83" height="83" alt="Gallery" /></a>
-							<a href="#"><img src="{% static "images/ftr-wid-gallery4.jpg" %}" width="83" height="83" alt="Gallery" /></a>
-							<a href="#"><img src="{% static "images/ftr-wid-gallery5.jpg" %}" width="83" height="83" alt="Gallery" /></a>
-							<a href="#"><img src="{% static "images/ftr-wid-gallery6.jpg" %}" width="83" height="83" alt="Gallery" /></a>
-						</div>
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<aside class="ftr-widget widget_subscribe map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1151.8147864075354!2d20.49608008366787!3d54.73373029259503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e33e046234e037%3A0xd2ccbb1c1d7a5cb6!2sRepair%20and%20maintenance%20of%20car%20air%20conditioners!5e0!3m2!1sen!2sru!4v1580220019553!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 					</aside>
 				</div>
 			</div>
 		</div><!-- Container /- -->
-		<div class="footer-bottom container-fluid no-padding">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2 col-sm-12 col-xs-12">
-						<p>&copy; 2016 All Rights Reserved</p>
+			<!-- Top Header -->
+			<div class="top-header container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 col-sm-12">
+							<p>Металлоконструкции в Калининграде. Изделия из металла и дерева.</p>
+						</div>
+						<div class="col-md-5 col-sm-12">
+							<a href="mailto:metalar@rambler.ru" title="metalar@rambler.ru"><i class="fa fa-envelope"></i>metalar@rambler.ru</a>
+							<a href="tel:+79114681355" title="+79114681355"><i class="fa fa-phone"></i>+79114681355</a>
+						</div>
 					</div>
-					<div class="col-md-10 col-sm-12 col-xs-12">
-						<!-- nav -->
-						<nav class="navbar navbar-default ow-navigation">
-							<div class="navbar-header">
-								<button aria-controls="navbar" aria-expanded="false" data-target="#ftr-navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-							<div class="navbar-collapse collapse navbar-right" id="ftr-navbar">
-								<ul class="nav navbar-nav">
-									<li><a href="index.html" title="Home">Home</a></li>
-									<li><a href="services.html" title="Services">Services</a></li>
-									<li><a href="#" title="Terms & Condition">Terms &amp; Condition</a></li>
-									<li><a href="#" title="Privacy Policy">privacy policy</a></li>
-									<li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
-								</ul>
-							</div><!--/.nav-collapse -->
-						</nav><!-- nav /- -->
-					</div>
-				</div>
-			</div>
-		</div>
+				</div><!-- Container -->
+			</div><!-- Top Header /- -->
 	</div><!-- Footer Section /- -->
 
 	<!-- JQuery v1.11.3 -->

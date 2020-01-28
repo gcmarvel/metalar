@@ -64,7 +64,7 @@
 	margin-bottom: 0;
 }
 .slider-section .item .carousel-caption h3 {
-	font-family: 'RalewayHeavy';
+	font-family: 'Exo 2', sans-serif;
 	font-size: 38px;
 	text-transform: uppercase;
 	letter-spacing: 1.52px;
@@ -73,6 +73,7 @@
 	margin-top: 10px;
 	margin-bottom: 25px;
 	position: relative;
+	font-weight: 900;
 }
 .slider-section .item .carousel-caption h3::before { 
 	background-color: #ba122b;
@@ -83,9 +84,10 @@
 	position: absolute;
 	left: 0;
 }
-.slider-section .item .carousel-caption h6 { 
+.slider-section .item .carousel-caption h6 {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 100;
 	line-height: 32px;
 }
 .slider-section .item .carousel-caption a { 
@@ -641,7 +643,7 @@
 	width: 100%;
 }
 .portfolio-box::before {
-	background-color: rgba(139, 26, 20, 0.85);
+	background-color: rgba(139, 26, 20, 0.65);
 	bottom: -1px;
 	content: "";
 	display: inline-block;
@@ -759,7 +761,7 @@
 }
 .call-out-section h3 {
 	float: left;
-	font-family: 'RalewayHeavy';
+	font-family: 'Exo 2', sans-serif;
 	font-size: 29px;
 	text-transform: uppercase;
 	margin: 0;
