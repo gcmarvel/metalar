@@ -1,5 +1,17 @@
 from django.contrib import admin
 
-from .models import Service
+from .models import Service, ServiceImage
 
-admin.site.register(Service)
+
+class ServiceImageInline(admin.TabularInline):
+    model = ServiceImage
+
+
+class ServiceAdmin(admin.ModelAdmin):
+    model = Service
+    inlines = [
+        ServiceImageInline
+    ]
+
+
+admin.site.register(Service, ServiceAdmin)

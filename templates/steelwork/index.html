@@ -1,335 +1,184 @@
+{% extends 'steelwork/base.html' %}
 {% load static %}
 {% load thumbnail %}
 
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
-<head>
-	<meta charset="utf-8">
+{% block main %}
+<main class="site-main page-spacing">
+  <!-- Slider Section -->
+  <div id="slider-section" class="slider-section container-fluid no-padding">
+    <div id="photo_slider" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#photo_slider" data-slide-to="0" class="active"></li>
+        <li data-target="#photo_slider" data-slide-to="1"></li>
+        <li data-target="#photo_slider" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="{% static "images/home-1-slide1.jpg" %}" width="1920" height="800" alt="Slide">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="col-md-8 col-sm-8 col-xs-8">
+                <p>Компания "Металар" предлагает</p>
+                <h3>Производство и монтаж металлоконструкций</h3>
+                <h6>При изготовлении металлоконструкций используется только самое современное оборудование и новейшие
+                  технологии</h6>
+                <a href="#" title="Оставить заказ">Оставить заказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="{% static "images/home-1-slide2.jpg" %}" width="1920" height="800" alt="Slide">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="col-md-8 col-sm-8 col-xs-8">
+                <p>Компания "Металар" предлагает</p>
+                <h3>Изделия из металла и дерева любой сложности</h3>
+                <h6>Качественные изделия, изготовленные в строгом соответствии с технологией. Мы предоставляем широкий
+                  ассортимент продукции</h6>
+                <a href="#" title="Оставить заказ">Оставить заказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="{% static "images/home-1-slide3.jpg" %}" width="1920" height="800" alt="Slide">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="col-md-8 col-sm-8 col-xs-8">
+                <p>Компания "Металар" предлагает</p>
+                <h3>Проектирование и производство на заказ</h3>
+                <h6>Проектирование и расчет любых работ. Производство в полном соостветствии с проектными
+                  документами</h6>
+                <a href="#" title="Оставить заказ">Оставить заказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- Wrapper for slides /- -->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Controls -->
+      <a class="left carousel-control" href="#photo_slider" role="button" data-slide="prev">
+        <span class="fa fa-angle-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#photo_slider" role="button" data-slide="next">
+        <span class="fa fa-angle-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div><!-- Slider Section /- -->
+  <div class="section-padding-small"></div>
 
-    <meta name="description" content="Производство металлоконструкций в Калининграде. Изготовление и монтаж металлоконструкций и изделий из дерева и металла под заказ и любой сложности.">
+  <!-- Welcome Section -->
+  <div class="welcome-section container-fluid no-padding">
+    <!-- Container -->
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <h3>О нашей компании</h3>
+        <p>Почему стоит обратиться именно к нам</p>
+      </div><!-- Section Header /- -->
+      <div class="col-md-6 col-sm-6 welcome-img no-padding">
+        <img src="{% static "images/home-1-welcome.jpg" %}" width="570" height="497" alt="Welcome"/>
+      </div>
+      <div class="col-md-6 col-sm-6 welcome-content">
+        <p>Наша компания предоставляет услуги по производству и монтажу металлоконструкций уже более 15 лет и имеет
+          безупречную репутацию среди коммерческих и частных клиентов</p>
+        <div class="welcome-box">
+          <i class="icon icon-Users"></i>
+          <h4>Профессиональная команда</h4>
+          <p>Мы - команда профессионалов-единомышленников увлеченных и любящих свое дело. Качество - наш приоритет</p>
+        </div>
+        <div class="welcome-box">
+          <i class="icon icon-File"></i>
+          <h4>Гарантия работы</h4>
+          <p>Мы гарантируем наивысшее качество произведенных нами работ и изделий из дерева и металла</p>
+        </div>
+        <div class="welcome-box">
+          <i class="icon icon-Dollar"></i>
+          <h4>Доступные цены</h4>
+          <p>Мы предлагаем широкий спектр работ и материалов, подходящих под любой бюджет</p>
+        </div>
+      </div>
+    </div><!-- Container /- -->
+  </div><!-- Welcome Section /- -->
+  <div class="section-padding"></div>
 
-	<title>МЕТАЛЛАР || Металлоконструкции в Калининграде. Изделия из металла и дерева. </title>
+  <!-- Portfolio Section -->
+  <div id="portfolio-section" class="container-fluid no-padding portfolio-section portfolio-4-column">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <h3>Наша продукция</h3>
+        <p>Изделия из металла и дерева</p>
+      </div><!-- Section Header -->
+      <!-- Portfolio Filters -->
+      <ul id="filters" class="portfolio-categories no-left-padding sorting-menu">
+        {% for service in services %}
+        <li class=""><a href="{% url 'portfolio' service.id %}">{{ service.short_title }}</a></li>
+        {% endfor %}
+      </ul><!-- / Portfolio Filters -->
+    </div>
+    <div class="container-fluid no-padding portfolio-list">
+      {% for service in services %}
+        <div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box interior">
+          {% thumbnail service.main_image "480x310" crop="center" as im %}
+            <img alt="{{ service.title }}" src="{{ im.url }}"/>
+          {% endthumbnail %}
+          <div class="hover-detail">
+            <div class="links">
+              <a href="{{ service.main_image.url }}" class="zoom" title="{{ service.short_title }}"><i
+                class="fa fa-search"></i></a>
+              <a href="{% url 'portfolio' service.id %}" title="{{ service.short_title }}"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="project-title">
+              <h3>{{ service.title }}</h3>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div><!-- Portfolio Section /- -->
 
-	<!-- Standard Favicon -->
-	<link rel="icon" type="image/x-icon" href="{% static "images/small_logo.png" %}" />
+  <!-- Call Out Section -->
+  <div class="call-out-section container-fluid no-padding">
+    <!-- Container -->
+    <div class="container">
+      <h3>Нужны металлоконструкции? Оставьте телефон и мы перезвоним вам в ближайшее время</h3>
+      <a href="#" title="view all works">Позвоните мне</a>
+    </div>
+    <!-- Container /- -->
+  </div><!-- Call Out Section /- -->
 
-	<!-- Library - Google Font Familys -->
-    <link href="https://fonts.googleapis.com/css?family=Exo+2|Montserrat&display=swap" rel="stylesheet">
-	<!-- Library - Bootstrap v3.3.5 -->
-    <link rel="stylesheet" type="text/css" href="{% static "libraries/lib.css" %}">
-
-	<!-- Custom - Common CSS -->
-	<link rel="stylesheet" type="text/css" href="{% static "css/plugins.css" %}">
-	<link rel="stylesheet" type="text/css" href="{% static "css/navigation-menu.css" %}">
-
-	<!-- Custom - Theme CSS -->
-	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
-	<link rel="stylesheet" type="text/css" href="{% static "css/shortcodes.css" %}">
-
-	<!--[if lt IE 9]>
-		<script src="js/html5/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-	<!-- Loader -->
-	<div id="site-loader" class="load-complete">
-		<div class="loader">
-			<div class="loader-inner ball-clip-rotate">
-				<div></div>
-			</div>
-		</div>
-	</div><!-- Loader /- -->
-
-	<a id="top"></a>
-
-	<!-- Header Section -->
-	<header id="header" class="header-section container-fluid no-padding">
-		<!-- SidePanel -->
-		<div id="slidepanel">
-			<!-- Top Header -->
-			<div class="top-header container-fluid no-padding">
-				<!-- Container -->
-				<div class="container">
-					<div class="row">
-						<div class="col-md-7 col-sm-12">
-							<p>Металлоконструкции в Калининграде. Изделия из металла и дерева.</p>
-						</div>
-						<div class="col-md-5 col-sm-12">
-							<a href="mailto:metalar@rambler.ru" title="metalar@rambler.ru"><i class="fa fa-envelope"></i>metalar@rambler.ru</a>
-							<a href="tel:+79114681355" title="+79114681355"><i class="fa fa-phone"></i>+79114681355</a>
-						</div>
-					</div>
-				</div><!-- Container -->
-			</div><!-- Top Header /- -->
-			<!-- Middel Header /- -->
-			<div class="middle-header container-fluid no-padding">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4">
-							<a href="{% url 'home' %}" title="Металлоконструкции в Калининграде. Изделия из металла и дерева."><img src="{% static "images/metalar_logo.png" %}" alt="Логотип Металлар" /></a>
-						</div>
-						<div class="col-md-8 col-sm-12 header-content">
-							<div class="header-cnt-box">
-								<i class="icon icon-Time"></i>
-								<h4>Часы работы</h4>
-								<p>ПН - ПТ : 9:00 - 20:00</p>
-							</div>
-                            <div class="header-cnt-box">
-								<i class="icon icon-Phone"></i>
-								<h4>Телефон</h4>
-								<a class="gray" href="tel:+79114681355" title="+79114681355"><i class="fa fa-phone"></i>+79114681355</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!-- SidePanel /- -->
-		<!-- Container -->
-	</header><!-- Header Section /- -->
-
-	<main class="site-main page-spacing">
-		<!-- Slider Section -->
-		<div id="slider-section" class="slider-section container-fluid no-padding">
-			<div id="photo_slider" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#photo_slider" data-slide-to="0" class="active"></li>
-					<li data-target="#photo_slider" data-slide-to="1"></li>
-					<li data-target="#photo_slider" data-slide-to="2"></li>
-				</ol>
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="{% static "images/home-1-slide1.jpg" %}" width="1920" height="800" alt="Slide">
-						<div class="carousel-caption">
-							<div class="container">
-								<div class="col-md-8 col-sm-8 col-xs-8">
-									<p>Компания "Металар" предлагает</p>
-									<h3>Производство и монтаж металлоконструкций</h3>
-									<h6>При изготовлении металлоконструкций используется только самое современное оборудование и новейшие технологии</h6>
-									<a href="#" title="Оставить заказ">Оставить заказ</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<img src="{% static "images/home-1-slide2.jpg" %}" width="1920" height="800" alt="Slide">
-						<div class="carousel-caption">
-							<div class="container">
-								<div class="col-md-8 col-sm-8 col-xs-8">
-									<p>Компания "Металар" предлагает</p>
-									<h3>Изделия из металла и дерева любой сложности</h3>
-									<h6>Качественные изделия, изготовленные в строгом соответствии с технологией. Мы предоставляем широкий ассортимент продукции</h6>
-									<a href="#" title="Оставить заказ">Оставить заказ</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<img src="{% static "images/home-1-slide3.jpg" %}" width="1920" height="800" alt="Slide">
-						<div class="carousel-caption">
-							<div class="container">
-								<div class="col-md-8 col-sm-8 col-xs-8">
-									<p>Компания "Металар" предлагает</p>
-									<h3>Проектирование и производство на заказ</h3>
-									<h6>Проектирование и расчет любых работ. Производство в полном соостветствии с проектными документами</h6>
-									<a href="#" title="Оставить заказ">Оставить заказ</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div><!-- Wrapper for slides /- -->
-
-				<!-- Controls -->
-				<a class="left carousel-control" href="#photo_slider" role="button" data-slide="prev">
-					<span class="fa fa-angle-left" aria-hidden="true"></span>
-				</a>
-				<a class="right carousel-control" href="#photo_slider" role="button" data-slide="next">
-					<span class="fa fa-angle-right" aria-hidden="true"></span>
-				</a>
-			</div>
-		</div><!-- Slider Section /- -->
-		<div class="section-padding-small"></div>
-
-		<!-- Welcome Section -->
-		<div class="welcome-section container-fluid no-padding">
-			<!-- Container -->
-			<div class="container">
-				<!-- Section Header -->
-				<div class="section-header">
-					<h3>О нашей компании</h3>
-					<p>Почему стоит обратиться именно к нам</p>
-				</div><!-- Section Header /- -->
-				<div class="col-md-6 col-sm-6 welcome-img no-padding">
-					<img src="{% static "images/home-1-welcome.jpg" %}"  width="570" height="497" alt="Welcome" />
-				</div>
-				<div class="col-md-6 col-sm-6 welcome-content">
-					<p>Наша компания предоставляет услуги по производству и монтажу металлоконструкций уже более 15 лет и имеет безупречную репутацию среди коммерческих и частных клиентов</p>
-					<div class="welcome-box">
-						<i class="icon icon-Users"></i>
-						<h4>Профессиональная команда</h4>
-						<p>Мы - команда профессионалов-единомышленников увлеченных и любящих свое дело. Качество - наш приоритет</p>
-					</div>
-					<div class="welcome-box">
-						<i class="icon icon-File"></i>
-						<h4>Гарантия работы</h4>
-						<p>Мы гарантируем наивысшего качество произведенных нами работ и изделий из дерева и металла</p>
-					</div>
-					<div class="welcome-box">
-						<i class="icon icon-Dollar"></i>
-						<h4>Доступные цены</h4>
-						<p>Мы предлагаем широкий спектр работ и материалов, подходящих под любой бюджет</p>
-					</div>
-				</div>
-			</div><!-- Container /- -->
-		</div><!-- Welcome Section /- -->
-		<div class="section-padding"></div>
-
-		<!-- Portfolio Section -->
-		<div id="portfolio-section" class="container-fluid no-padding portfolio-section portfolio-4-column">
-			<div class="container">
-				<!-- Section Header -->
-				<div class="section-header">
-					<h3>Наша продукция</h3>
-                    <p>Изделия из металла и дерева</p>
-				</div><!-- Section Header -->
-			</div>
-			<div class="container-fluid no-padding portfolio-list">
-                {% for service in services %}
-				<div class="col-md-3 col-sm-4 col-xs-6 no-padding portfolio-box interior">
-                        {% thumbnail service.image "480x310" crop="center" as im %}
-                            <img alt="{{ service.title }}" src="{{ im.url }}"/>
-                        {% endthumbnail %}
-					<div class="hover-detail">
-						<div class="links">
-							<a href="{{ service.image.url }}" class="zoom" title="{{ service.title }}"><i class="fa fa-search"></i></a>
-						</div>
-						<div class="project-title">
-							<h3>{{ service.title }}</h3>
-						</div>
-					</div>
-				</div>
-                {% endfor %}
-			</div>
-		</div><!-- Portfolio Section /- -->
-
-		<!-- Call Out Section -->
-		<div class="call-out-section container-fluid no-padding">
-			<!-- Container -->
-			<div class="container">
-				<h3>Нужны металлоконструкции? Оставьте телефон и мы перезвоним вам в ближайшее время</h3>
-				<a href="#" title="view all works">Позвоните мне</a>
-			</div>
-			<!-- Container /- -->
-		</div><!-- Call Out Section /- -->
-
-		<!-- Testimonial Section -->
-		<div class="testimonial-section container-fluid no-padding">
-			<!-- Container -->
-			<div class="container">
-				<div class="testimonial-carousel">
-					<div class="testimonial-box">
-						<p>Качественная работа выполненная в срок. Компания "Металар" полностью оправдала ожидания</p>
-						<div class="author-box">
-							<img src="{% static "images/small_logo_black.png" %}" width="67" height="67" alt="Testimonial" />
-							<h4>Валерий <span>клиент компании "Металар"</span></h4>
-						</div>
-					</div>
-					<div class="testimonial-box">
-						<p>За небольшие деньги я получил кованую лестницу высочайшего качества. Великолепная работа</p>
-						<div class="author-box">
-							<img src="{% static "images/small_logo_black.png" %}" width="67" height="67" alt="Testimonial" />
-							<h4>Андрей <span>клиент компании "Металар"</span></h4>
-						</div>
-					</div>
-					<div class="testimonial-box">
-						<p>Спасибо за отлично сделанные гаражные ворота, было очень приятно иметь с вами дело</p>
-						<div class="author-box">
-							<img src="{% static "images/small_logo_black.png" %}" width="67" height="67" alt="Testimonial" />
-							<h4>Максим <span>клиент компании "Металар"</span></h4>
-						</div>
-					</div>
-				</div>
-			</div><!-- Container /- -->
-		</div><!-- Testimonial Section /- -->
-	</main>
-
-	<!-- Footer Section -->
-	<div class="footer-section container-fluid no-padding">
-		<!-- Container -->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<aside class="ftr-widget widget_contact">
-						<h3 class="widget-title">Наши контакты</h3>
-						<div class="info-box">
-							<h5>Email</h5>
-							<a href="mailto:metalar@rambler.ru" title="metalar@rambler.ru">metalar@rambler.ru</a>
-						</div>
-						<div class="info-box">
-							<h5>Телефон</h5>
-							<a href="tel:+79114681355" title="+79114681355">+79114681355</a>
-						</div>
-                        <aside class="ftr-widget widget_subscribe">
-                            <form>
-                                <div class="form-group">
-                                    <input type="submit" value="Оставить заказ" />
-                                </div>
-                            </form>
-                        </aside>
-					</aside>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<aside class="ftr-widget widget_opening">
-						<h3 class="widget-title">Часы работы</h3>
-						<p><span>Понедельник - Пятница</span>: 9:00 - 22:00</p>
-					</aside>
-					<aside class="ftr-widget widget_links">
-						<h3 class="widget-title">Адрес</h3>
-							<p class="address">г. Калининград<br> улица Нарвская<br> дом 47, корпус В, офис 17</p>
-					</aside>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<aside class="ftr-widget widget_subscribe map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1369.7557689224034!2d20.49679653327889!3d54.733451360069694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e33e046234e037%3A0xd2ccbb1c1d7a5cb6!2z0KDQtdC80L7QvdGCINC4INC-0LHRgdC70YPQttC40LLQsNC90LjQtSDQsNCy0YLQvtC80L7QsdC40LvRjNC90YvRhSDQutC-0L3QtNC40YbQuNC-0L3QtdGA0L7Qsg!5e0!3m2!1sru!2sru!4v1580221284484!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </aside>
-				</div>
-			</div>
-		</div><!-- Container /- -->
-			<!-- Top Header -->
-			<div class="top-header container-fluid no-padding">
-				<!-- Container -->
-				<div class="container">
-					<div class="row">
-						<div class="col-md-7 col-sm-12">
-							<p>Металлоконструкции в Калининграде. Изделия из металла и дерева.</p>
-						</div>
-						<div class="col-md-5 col-sm-12">
-							<a href="mailto:metalar@rambler.ru" title="metalar@rambler.ru"><i class="fa fa-envelope"></i>metalar@rambler.ru</a>
-							<a href="tel:+79114681355" title="+79114681355"><i class="fa fa-phone"></i>+79114681355</a>
-						</div>
-					</div>
-				</div><!-- Container -->
-			</div><!-- Top Header /- -->
-	</div><!-- Footer Section /- -->
-
-	<!-- JQuery v1.11.3 -->
-	<script src="{% static "js/jquery.min.js" %}"></script>
-
-	<!-- Library JS -->
-	<script src="{% static "libraries/lib.js" %}"></script>
-
-	<!-- Library - Theme JS -->
-	<script src="{% static "js/functions.js" %}"></script>
-
-</body>
-</html>
+  <!-- Testimonial Section -->
+  <div class="testimonial-section container-fluid no-padding">
+    <!-- Container -->
+    <div class="container">
+      <div class="testimonial-carousel">
+        <div class="testimonial-box">
+          <p>Качественная работа выполненная в срок. Компания "Металар" полностью оправдала ожидания</p>
+          <div class="author-box">
+            <img src="{% static "images/small_logo_black.png" %}" width="67" height="67" alt="Testimonial"/>
+            <h4>Валерий <span>клиент компании "Металар"</span></h4>
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <p>За небольшие деньги я получил кованую лестницу высочайшего качества. Великолепная работа</p>
+          <div class="author-box">
+            <img src="{% static "images/small_logo_black.png" %}" width="67" height="67" alt="Testimonial"/>
+            <h4>Андрей <span>клиент компании "Металар"</span></h4>
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <p>Спасибо за отлично сделанные гаражные ворота, было очень приятно иметь с вами дело</p>
+          <div class="author-box">
+            <img src="{% static "images/small_logo_black.png" %}" width="67" height="67" alt="Testimonial"/>
+            <h4>Максим <span>клиент компании "Металар"</span></h4>
+          </div>
+        </div>
+      </div>
+    </div><!-- Container /- -->
+  </div><!-- Testimonial Section /- -->
+</main>
+{% endblock main %}

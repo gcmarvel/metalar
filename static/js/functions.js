@@ -18,63 +18,10 @@
 	"use strict" 
 		
 	/* ## Document Scroll - Window Scroll */
-	$( document ).scroll(function()
-	{
-		var scroll	= $(window).scrollTop();
-		var height	=	$(window).height();
-		/*** set sticky menu ***/
-		if( scroll >= height )
-		{
-			$(".header-section").addClass("navbar-fixed-top animated fadeInDown").delay( 2000 ).fadeIn();
-		}
-		else if ( scroll <= height )
-		{
-			$(".header-section").removeClass("navbar-fixed-top animated fadeInDown");
-		}
-		else
-		{
-			$(".header-section").removeClass("navbar-fixed-top animated fadeInDown");
-		} /* set sticky menu - end */
-		if ($(this).scrollTop() >= 50)
-		{
-			/* If page is scrolled more than 50px */
-			$('#back-to-top').fadeIn(200);    /* Fade in the arrow */
-		}
-		else
-		{
-			$('#back-to-top').fadeOut(200);   /* Else fade out the arrow */
-		}
-	});
-	$('#back-to-top').on("click", function()
-	{
-		/* When arrow is clicked */
-		$('body,html').animate(
-		{
-			scrollTop : 0 /* Scroll to top of body */
-		},800);
-	});		
 		
 	
 	/* ## Document Ready - Handler for .ready() called */
 	$(document).ready(function($) {
-		/* -- Scrolling Navigation */
-		var scroll	=	$(window).scrollTop();
-		var width	=	$(window).width();
-		var height	=	$(window).height();
-		
-		/* ** set sticky menu ** */
-		if( scroll >= height -500 )
-		{
-			$(".header-section").addClass("navbar-fixed-top").delay( 2000 ).fadeIn();
-		}
-		else if ( scroll <= height )
-		{
-			$(".header-section").removeClass("navbar-fixed-top");
-		}
-		else
-		{
-			$(".header-section").removeClass("navbar-fixed-top");
-		} /* set sticky menu - end */
 		
 		/* local url of page (minus any hash, but including any potential query string) */
 		var url = location.href.replace(/#.*/,'');
@@ -179,20 +126,6 @@
 		}
 		
 		/* -- Portfolio Section */
-		setTimeout(function() {
-			var $container = $(".portfolio-list");
-			$container.isotope({
-			  itemSelector: ".portfolio-box",
-			  transitionDuration: "0.5s"
-			});
-			$("#filters a").on("click",function(){
-				$("#filters a").removeClass("active");
-				$(this).addClass("active");
-				var selector = $(this).attr("data-filter");
-				$container.isotope({ filter: selector });		
-				return false;
-			});
-		},5000);
 		
 		$('.portfolio-box').magnificPopup({
 			delegate: 'a.zoom',

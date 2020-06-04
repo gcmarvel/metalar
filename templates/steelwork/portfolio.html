@@ -1,0 +1,54 @@
+{% extends 'steelwork/base.html' %}
+{% load static %}
+{% load thumbnail %}
+{% block title %}
+  <title>МЕТАЛАР || {{ service.title }} </title>
+{% endblock title %}
+{% block main %}
+  <main class="site-main page-spacing">
+
+    <!-- Page Banner Section -->
+    <div class="page-banner portfolio-3-column-banner container-fluid no-padding">
+      <h2>{{service.short_title}}</h2>
+    </div><!-- Banner Section /- -->
+
+    <div class="section-padding"></div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio-section" class="container-fluid no-padding portfolio-section portfolio-3-column">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <h3>Наша продукция</h3>
+        </div><!-- Section Header -->
+        <!-- Portfolio Filters -->
+        <ul id="filters" class="portfolio-categories no-left-padding sorting-menu">
+          {% for service in services %}
+            <li class=""><a href="{% url 'portfolio' service.id %}">{{ service.short_title }}</a></li>
+          {% endfor %}
+        </ul>
+
+        <div class="container-fluid no-padding portfolio-list">
+          {% for image in images.all %}
+            <div class="col-md-4 col-sm-4 col-xs-6 no-padding portfolio-box plumbing">
+              {% thumbnail image.image "480x310" crop="center" as im %}
+                <img alt="{{ service.title }}" src="{{ im.url }}"/>
+              {% endthumbnail %}
+              <div class="hover-detail">
+                <div class="links">
+                  <a href="{{ image.image.url }}" class="zoom" title="Увеличить"><i
+                    class="fa fa-search"></i></a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      <div class="section-padding"></div>
+      <div class="portfolio-description">
+        <h4>{{ service.description }}</h4>
+      </div>
+      </div>
+    </div><!-- Portfolio Section /- -->
+    <div class="section-padding"></div>
+  </main>
+{% endblock main %}

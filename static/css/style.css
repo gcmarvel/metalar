@@ -1130,7 +1130,7 @@ main {
 	word-wrap: break-word;
 }
 .portfolio-3-column-banner {
-	background-image: url("../images/portfolio3-banner.jpg");
+	background-image: url("../images/pattern.jpg");
 }
 .portfolio-4-column-banner {
 	background-image: url("../images/portfolio4-banner.jpg");
@@ -1368,7 +1368,6 @@ main {
 		width: 100%;
 	}
 }
-
 
 .address {
 	color: white;
