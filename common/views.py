@@ -7,7 +7,7 @@ class HomePageView (TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['services'] = SteelworkService.objects.all()
+        context['services'] = SteelworkService.objects.filter(active=True)
         return context
 
 
@@ -16,7 +16,7 @@ class PortfolioView (TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['services'] = SteelworkService.objects.all()
+        context['services'] = SteelworkService.objects.filter(active=True)
         context['service'] = SteelworkService.objects.get(id=self.kwargs['service'])
         context['images'] = SteelworkService.objects.get(id=self.kwargs['service']).images
         return context
