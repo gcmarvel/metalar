@@ -9,7 +9,7 @@
 
     <!-- Page Banner Section -->
     <div class="page-banner portfolio-3-column-banner container-fluid no-padding">
-      <h2>{{service.short_title}}</h2>
+      <h2>{{ service.short_title }}</h2>
     </div><!-- Banner Section /- -->
 
     <div class="section-padding"></div>
@@ -36,19 +36,28 @@
               {% endthumbnail %}
               <div class="hover-detail">
                 <div class="links">
-                  <a href="{{ image.image.url }}" class="zoom" title="Увеличить"><i
+                  <a href="{{ image.image.url }}" class="zoom" title="{{service.title}}"><i
                     class="fa fa-search"></i></a>
                 </div>
               </div>
             </div>
           {% endfor %}
         </div>
-      <div class="section-padding"></div>
-      <div class="portfolio-description">
-        <h4>{{ service.description }}</h4>
-      </div>
+        <div class="section-padding"></div>
+        <div class="portfolio-description">
+          <h4>{{ service.description }}</h4>
+        </div>
       </div>
     </div><!-- Portfolio Section /- -->
     <div class="section-padding"></div>
+    <!-- Call Out Section -->
+    <div class="call-out-section container-fluid no-padding">
+      <!-- Container -->
+      <div class="container">
+        <h3>Нужны металлоконструкции? Оставьте телефон и мы перезвоним вам в ближайшее время</h3>
+        <a href="#" title="view all works">Позвоните мне</a>
+      </div>
+      <!-- Container /- -->
+    </div><!-- Call Out Section /- -->
   </main>
 {% endblock main %}
